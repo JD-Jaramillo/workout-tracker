@@ -23,7 +23,7 @@ There is no need to install anything, to view the workout tracker simply follow 
 
 See deployed site here: [Deployed site]() 
 
-See repository here: [GitHub Repo]()
+See repository here: [GitHub Repo](https://github.com/JD-Jaramillo/workout-tracker)
 
 ## Contributing
 
