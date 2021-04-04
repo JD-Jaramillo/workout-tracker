@@ -1,4 +1,5 @@
 
+const express = require('express');
 const router = require('express').Router();
 const { Workout } = require('../models');
 
@@ -13,7 +14,7 @@ router.get('/api/workouts', (req, res) => {
 });
 
 router.put('/api/workouts/:id', async ({ body, params }, res) => {
-    console.log(body);
+    console.log("**********", body);
     try {
         const workout = await Workout.findByIdAndUpdate(
             params.id,
@@ -48,5 +49,10 @@ router.get('/api/workouts/range', (req, res) => {
         })
 });
 
-module.exports = router;
+module.exports = (app => {
+    router.use(function timelog(req, res, next) {
+        console.log("Time: ", Date.now());
+        next();
+    })
+});
 
