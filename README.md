@@ -22,7 +22,7 @@ As a user, I want to be able to view create and track daily workouts. I want to 
 
 There is no need to install anything, to view the workout tracker simply follow the link below. 
 
-See deployed site here: [Deployed site]() 
+See deployed site here: [Deployed site](https://jj-workout-tracker.herokuapp.com/) 
 
 See repository here: [GitHub Repo](https://github.com/JD-Jaramillo/workout-tracker)
 
