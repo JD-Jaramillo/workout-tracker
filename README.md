@@ -3,15 +3,13 @@ Workout Tracker built using a Mongo database with a Mongoose schema and handle r
 
 ## Table of Contents
 
-* [JS](#JS)
 * [Requirements](#Requirements)
 * [Installation](#Installation)
 * [Contributing](#Contributing)
 
-## JS
- 
 
-![Watch the video](./GIFs/.gif)
+![screenshot of homepage](./GIFs/.gif)
+![screenshot of dashboard](./GIFs/.gif)
 
 ## Requirements
 
