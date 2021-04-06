@@ -7,9 +7,12 @@ Workout Tracker built using a Mongo database with a Mongoose schema and handle r
 * [Installation](#Installation)
 * [Contributing](#Contributing)
 
-
-![screenshot of homepage](./GIFs/.gif)
-![screenshot of dashboard](./GIFs/.gif)
+Homepage
+![screenshot of homepage](./public/images/homepage.png)
+Add-excercise
+![screenshot of add-exercise](./public/images/add-exercise.png)
+Dashboard
+![screenshot of dashboard](./public/images/dashboard.png)
 
 ## Requirements
 
