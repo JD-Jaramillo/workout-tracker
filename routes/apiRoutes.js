@@ -1,5 +1,4 @@
 
-const express = require('express');
 const router = require('express').Router();
 const { Workout } = require('../models');
 
@@ -13,13 +12,13 @@ router.get('/api/workouts', (req, res) => {
         })
 });
 
-router.put('/api/workouts/:id', async ({ body, params }, res) => {
-    console.log("**********", body);
+router.put('/api/workouts/:id', async (req, res) => {
+    console.log("**********", req.body);
     try {
         const workout = await Workout.findByIdAndUpdate(
-            params.id,
-            { $push: { exercises: body } },
-            { new: true, runValidators: true }
+            req.params.id,
+            { $push: { exercises: req.body } },
+            { new: true }
         )
         console.log(workout);
         res.json(workout)
@@ -49,10 +48,12 @@ router.get('/api/workouts/range', (req, res) => {
         })
 });
 
-module.exports = (app => {
-    router.use(function timelog(req, res, next) {
-        console.log("Time: ", Date.now());
-        next();
-    })
-});
+module.exports = router;
+
+// (app => {
+//     router.use(function timelog(req, res, next) {
+//         console.log("Time: ", Date.now());
+//         next();
+//     })
+// });
 
